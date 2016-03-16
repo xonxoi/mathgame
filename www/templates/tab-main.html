@@ -1,0 +1,32 @@
+<ion-view view-title="Question">
+  <ion-content class="padding">
+    <div class="content-container">
+      <div class="row">
+        <div class="card text-center">
+          <span class="number-area">
+            {{adder}}
+          </span>
+        </div>
+      </div>
+      <div class="row control-area">
+        <div class="col col-33">
+          <button class="button button-block button-dark icon-left ion-ios-play" ng-click="start()">
+            Start
+          </button>
+        </div>
+        <div class="col col-66">
+          <label class="item item-input">
+            <input type="number" placeholder="Result" ng-model="answer.ret" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-50 col-offset-25">
+          <button class="button button-block button-assertive" ng-click="answer()">
+            Answer
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
